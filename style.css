@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #3e3e42;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bulb{
+    height: 200px;
+    width: 200px;
+    /* background-color: red; */
+    border-radius: 50% 50% 50% 50% / 35% 34% 66% 65% ;
+    /* box-shadow: 0px -30px 150px red; */
+}
+
+/* .switch{
+    position: absolute;
+    top: 70%;
+} */
+.input-field{
+    position: absolute;
+    top: 80%;
+    height: 35px;
+    width: 250px;
+    border-radius: 10px;
+    padding:10px;
+    outline: none;
+    border: none;
+}
+.change-button{
+    position: absolute;
+    top: 100%;
+}
+
+.change{
+    position: absolute;
+    top: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change button{
+    margin-top: 40px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    outline: none;
+}
+.switch button{
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    outline: none;
+    font-size: 28px;
+}
+
+.error {
+    animation: shake 0.1s linear 10;
+    border: 1px solid red;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(-3px);
+    }
+
+    50% {
+        transform: translate(0);
+    }
+
+    75% {
+        transform: translate(3px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
